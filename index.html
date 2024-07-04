@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/app.js" defer></script>
+</head>
+
+<body>
+    <!-- Este es el contenedor general que tiene los 2 divs -->
+    <main class="contenedor">
+
+        <!-- Aqui empieza el código del cuadro de entrada -->
+        <section class="contenedor_entrada">
+            <!-- El logo del header -->
+            <div class="entrada header_logo">
+                <header>
+                    <div class="logo">
+                        <img src="/assets/Logo.png" alt="logo a">
+                    </div>
+                </header>
+            </div>
+
+            <!-- El área de texto -->
+            <div class="entrada texto_ingresado">
+                <textarea class="textarea" name="ingresa_el_valor" placeholder="Ingresa el texto aquí"
+                    id="text"></textarea>
+            </div>
+
+            <!-- La sección de los botones -->
+            <div class="entrada botones_envio">
+
+                <!-- El texto pequeño antes de los botones -->
+                <div class="texto_envio">
+                    <img src="/assets/bi_exclamation-circle-fill.png">
+                    <p class="instrucciones_envio">
+                        Letras minusculas y sin acento
+                    </p>
+                </div>
+
+                <!-- Los botones agrupados -->
+                <div class="botones">
+                    <button class="boton1" onclick="encriptar()">
+                        Encriptar
+                    </button>
+                    <button class="boton2" onclick="desencriptar()">
+                        Desencritptar
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Aqui comienza el segundo contenedor donde estará la codificación -->
+        <section class="contenedor_salida">
+
+            <!-- El texto con las instrucciones -->
+            <div class="texto">
+
+                <!-- La imagen -->
+                <img class="imagen" src="/assets/Muñeco.png" alt="niño sentado" id="img_src">
+
+                <h3 id="texto">
+                    Ningún mensaje fue encontrado
+                </h3>
+
+                <p id="txt_error">
+                    Ingresa el texto que deseas encriptar o desencriptar
+                </p>
+
+                <button class="boton3" onclick="copiarTexto()" id="copiar">
+                    Copiar
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
