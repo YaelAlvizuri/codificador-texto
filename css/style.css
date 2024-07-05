@@ -310,6 +310,7 @@ body {
 
     .boton1 {
         padding: 10px 0px;
+        border: 1px solid var(--color-hover-primario);
     }
 
     .boton2 {
